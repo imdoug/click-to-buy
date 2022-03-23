@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react'
 import { commerce } from './lib/commerce.js'
-import { Product, NavBar, Cart, Checkout } from './components'
+import { Product, NavBar, Cart, Checkout, Footer } from './components'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 function App() {
@@ -78,6 +78,7 @@ function App() {
           <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage}/>
         </Route>
       </Switch>
+      <Footer />
     </div>
     </Router>
 
