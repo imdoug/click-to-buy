@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react'
 import { commerce } from './lib/commerce.js'
-import { Product, NavBar, Cart, Checkout, Footer } from './components'
+import { Product, NavBar, Cart, Checkout, Footer, Carousel } from './components'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css'
 
@@ -67,7 +67,10 @@ function App() {
       <NavBar totalItems={cart.total_items}/>
       <Switch>
         <Route exact path="/">
-          <Product  products={products} onAddToCart={handleAddToCart}/>
+          <>
+            <Carousel />
+            <Product  products={products} onAddToCart={handleAddToCart}/>
+          </>
         </Route>
         <Route axact path="/cart">
           <Cart cart={cart} 
