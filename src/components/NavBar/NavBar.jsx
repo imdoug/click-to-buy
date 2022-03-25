@@ -1,6 +1,6 @@
 import React from 'react'
-import { AppBar, Toolbar, IconButton, Badge,  MenuItem, Menu, Typography, Link as MaterialLink, Button} from "@material-ui/core"
-import { MailOutline, Phone, Instagram, LinkedIn, GitHub, Facebook, ShoppingCartOutlined, LocalMallOutlined } from '@material-ui/icons'
+import { AppBar, Toolbar, IconButton, Badge, Typography, Link as MaterialLink} from "@material-ui/core"
+import { MailOutline, Phone, Instagram, LinkedIn, GitHub, Facebook, LocalMallOutlined } from '@material-ui/icons'
 import { Link, useLocation} from 'react-router-dom'
 
 import useStyles from './styles'

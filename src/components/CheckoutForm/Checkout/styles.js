@@ -6,7 +6,7 @@ export default makeStyles((theme) => ({
   },
   toolbar: theme.mixins.toolbar,
   layout: {
-    marginTop: '5%',
+    marginTop: '150px',
     width: 'auto',
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
@@ -17,6 +17,7 @@ export default makeStyles((theme) => ({
     },
   },
   paper: {
+    borderRadius: '12px',
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3),
     padding: theme.spacing(2),

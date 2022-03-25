@@ -8,7 +8,6 @@ import AddressForm from '../AddressForm'
 import PaymentForm from '../PaymentForm'
 
 import { commerce } from '../../../lib/commerce'
-import { set } from 'react-hook-form'
 
 const steps = [
       'Shipping address', 'Payment details'
