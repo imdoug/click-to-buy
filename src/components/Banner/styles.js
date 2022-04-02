@@ -75,9 +75,13 @@ export default makeStyles((theme)=>({
             marginTop: '10px'
       },
       btn:{
-            background: '#0371E2', 
+            background: '#0371E2',
+            '&:hover':{
+                  background: 'rgba(3, 113, 226, 0.8)'
+            }, 
             color: '#FFF',
             padding: '5px 20px', 
-            marginTop: '10px'
+            marginTop: '10px',
+            textTransform: 'none'
       }
 }))

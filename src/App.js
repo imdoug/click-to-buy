@@ -68,7 +68,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <>
-            <Banner />
+          {products && <Banner products={products} onAddToCart={handleAddToCart}/>}
             <Product  products={products} onAddToCart={handleAddToCart}/>
           </>
         </Route>
