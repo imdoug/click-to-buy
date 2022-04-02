@@ -32,9 +32,13 @@ const NavBar = ({ totalItems } ) => {
                         </div>
                   </div>
                   <Toolbar>
-                        <Typography component={Link} to="/" variant='h6' className={classes.title} color='inherit'>
+                        {location.pathname === '/' 
+                        ? <Typography component={Link} to="/" variant='h6' className={classes.title} color='inherit'>
                               GameSpot
-                        </Typography>
+                        </Typography> 
+                        : <Typography style={{width: '100%', display: 'flex', justifyContent: 'center'}} component={Link} to="/" variant='h6' className={classes.title} color='inherit'>
+                              GameSpot
+                        </Typography>}
                         <div> </div>
                         <div className={classes.grow}></div>
                         {location.pathname === '/' && ( 

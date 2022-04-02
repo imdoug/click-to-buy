@@ -4,7 +4,9 @@ export default makeStyles(() => ({
   cartItem: {
     height: 470,
     width: 290,
-    borderRadius: 8,
+    borderRadius: 16,
+    boxShadow: '0px 24px 50px rgba(0,0,0,.08)',
+    backdropFilter: 'blur(4px)',
   },
   media: {
     marginTop: 15,
