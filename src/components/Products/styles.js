@@ -12,7 +12,7 @@ export default makeStyles((theme) => ({
             [theme.breakpoints.down('sm')]: {
                   display: 'block',
                   maxWidth: '100%',
-                  height: '550px',
+                  height: '560px',
                 },
       },
       mediaBox:{
@@ -24,7 +24,7 @@ export default makeStyles((theme) => ({
             alignItems: 'center',
             [theme.breakpoints.down('sm')]: {
                   width: '100%',
-                  paddingTop: '26.25%'
+                  paddingTop: '23.25%'
                 }
       },
       contentBox:{
@@ -37,7 +37,7 @@ export default makeStyles((theme) => ({
             alignItems: 'center',
             [theme.breakpoints.down('sm')]: {
                   width: '100%',
-                  paddingTop: '20%'
+                  paddingTop: 30,
             }
       },
       cardContent:{

@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom'
 const Cart = ({ cart , handleUpdateCartQuantity, handleRemoveFromCart, handleEmptyCart}) => {
       const classes = useStyles()
       const EmptyCart = () =>{
-            return <Typography variant="subtitle1">
+            return <Typography style={{minHeight: 430}} variant="subtitle1">
                   You have no items in your shopping cart, 
-                  <Link to="/" className={classes.link}> start adding some!</Link>
-            </Typography>
+                        <Link to="/" className={classes.link}> start adding some!</Link>
+                  </Typography>
       }
       const FilledCart = () =>{
             return (<>
