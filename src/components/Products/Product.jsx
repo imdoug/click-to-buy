@@ -13,7 +13,7 @@ const Product = ({product, onAddToCart}) => {
             <Box className={classes.contentBox}>
                   <CardContent style={{width: '80%', margin: '0 auto'}}>
                         <div className={classes.cardContent}>
-                              <Typography variant="body1" gutterBottom>
+                              <Typography variant="body1" style={{fontWeight: 600}} gutterBottom>
                                     {product.name}
                               </Typography>
                         </div>

@@ -14,9 +14,9 @@ const Cart = ({ cart , handleUpdateCartQuantity, handleRemoveFromCart, handleEmp
       }
       const FilledCart = () =>{
             return (<>
-                  <Grid container spacing={3}>
+                  <Grid container justifyContent='center' spacing={3}>
                         {cart.line_items.map((item)=> (
-                            <Grid item sx={12} sm={4} key={item.id}>
+                            <Grid item sx={12} md={4} sm={6} lg={3} key={item.id}>
                                   <CartItem item={item} handleUpdateCartQuantity={handleUpdateCartQuantity} handleRemoveFromCart={handleRemoveFromCart}/>
                             </Grid>
                         ))}

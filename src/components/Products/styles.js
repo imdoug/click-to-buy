@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 export default makeStyles((theme) => ({
       card: {
             display: 'flex',
-            height: '200px',
+            height: '230px',
             width: '400px',
             textAlign: 'center',
             borderRadius: 16,
@@ -17,7 +17,7 @@ export default makeStyles((theme) => ({
       },
       mediaBox:{
             width: '50%', 
-            maxHeight: '200px', 
+            maxHeight: '230px', 
             objectFit: 'contain',
             display:'flex', 
             justifyContent: 'center', 
@@ -30,7 +30,11 @@ export default makeStyles((theme) => ({
       contentBox:{
             textAlign: 'center',
             width: '50%', 
-            height: '100px',
+            height: '230px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
             [theme.breakpoints.down('sm')]: {
                   width: '100%',
                   paddingTop: '20%'
