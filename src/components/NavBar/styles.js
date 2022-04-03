@@ -12,7 +12,10 @@ export default makeStyles((theme) => ({
     },
   },
   title: {
-    flexGrow: 1,
+    fontFamily: 'Play',
+    fontWeight: 700,
+    fontSize: '40px',
+    color: '#0371E2',
     alignItems: 'center',
     display: 'flex',
     textDecoration: 'none',
@@ -63,6 +66,46 @@ export default makeStyles((theme) => ({
     width: '100%',
     [theme.breakpoints.up('md')]: {
       width: '20ch',
+    },
+  },
+  navOptions: {
+    fontFamily: 'Poppins',
+    color: '#AAAAAA',
+    marginRight: 20,
+    textDecoration: 'none'
+  },
+  findMe: {
+    display: 'flex',
+    marginTop: 10,
+    [theme.breakpoints.down('sm')]: {
+      display: 'block',
+    },
+  },
+  socialIcons: {
+    display: 'flex',
+    width: '50%',
+    marginLeft: 40,
+    color: '#AAAAAA',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      textAlign: 'center',
+      justifyContent: 'center',
+      marginLeft: 0,
+    },
+  },
+  contactInfo: {
+    display: 'flex',
+    width: '50%',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    marginRight: 40,
+    color: '#AAAAAA',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      textAlign: 'center',
+      marginRight: 0,
+      justifyContent: 'center',
+      marginTop: 10
     },
   },
 }));
